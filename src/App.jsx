@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Users from './pages/Users';
 import Projets from './pages/Projets';
 import Login from './pages/Login/Login';
+import Entreprise from './pages/Entreprise';
 //import './pages/Login/Login.css';
 
 
@@ -32,6 +33,8 @@ function App() {
       <Route path="/users" element={<Users />}></Route>
       <Route path="/login" element={<Login />}></Route>
       <Route path="/projets" element={<Projets />}></Route>
+      <Route path="/entreprise" element={<Entreprise />}></Route>
+      
       
      </Routes>
     
