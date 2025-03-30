@@ -2,15 +2,16 @@
 import './pages/Users.css';
 import './App.css';
 import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboards';
+import Dashboard from './components/Dashb';
 import { useState } from 'react'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Users from './pages/Users';
 import Projets from './pages/Projets';
 import Login from './pages/Login/Login';
+import Profile from './pages/Profile';
 import Entreprise from './pages/Entreprise';
-//import './pages/Login/Login.css';
+import Dashboardss from './pages/Dashboard';
 
 
 
@@ -33,6 +34,8 @@ function App() {
       <Route path="/users" element={<Users />}></Route>
       <Route path="/login" element={<Login />}></Route>
       <Route path="/projets" element={<Projets />}></Route>
+      <Route path="/profile" element={<Profile />}></Route>
+      <Route path="/dashboard" element={<Dashboardss />}></Route>
       <Route path="/entreprise" element={<Entreprise />}></Route>
       
       
