@@ -43,10 +43,10 @@ export default function EnterprisePage() {
     min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800">Enterprise Management</h1>
+          <h1 className="text-3xl font-bold text-gray-800">Gestion des Entreprises </h1>
           <button
             onClick={() => setIsDialogOpen(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center"
+            className="bg-blue-800 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export default function EnterprisePage() {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
             </svg>
-            Add Enterprise
+            Ajouter Enterprise
           </button>
         </div>
 
@@ -86,7 +86,7 @@ function EnterpriseList({ enterprises, onDelete }) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <div className="p-6 border-b border-gray-200">
-        <h2 className="text-xl font-semibold text-gray-800">Enterprises List</h2>
+        <h2 className="text-xl font-semibold text-gray-800">Liste des Entreprises</h2>
       </div>
 
       <div className="divide-y divide-gray-200">
@@ -180,10 +180,10 @@ function EnterpriseItem({ enterprise, onDelete }) {
           {showConfirm ? (
             <div className="flex items-center gap-2">
               <button onClick={() => setShowConfirm(false)} className="text-sm text-gray-500 hover:text-gray-700">
-                Cancel
+                Annuler
               </button>
               <button onClick={handleDelete} className="text-sm font-medium text-red-600 hover:text-red-800">
-                Confirm
+                Confirmer
               </button>
             </div>
           ) : (
@@ -312,7 +312,7 @@ function AddEnterpriseDialog({ isOpen, onClose, onAdd }) {
       >
         <div className="flex justify-between items-center p-6 border-b">
           <h2 id="dialog-title" className="text-xl font-semibold text-gray-800">
-            Add New Enterprise
+            Ajouter Enterprise
           </h2>
           <button
             onClick={onClose}
@@ -334,7 +334,7 @@ function AddEnterpriseDialog({ isOpen, onClose, onAdd }) {
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-              Enterprise Name
+              Nom d'Entreprise
             </label>
             <input
               type="text"
@@ -372,7 +372,7 @@ function AddEnterpriseDialog({ isOpen, onClose, onAdd }) {
 
           <div>
             <label htmlFor="odn" className="block text-sm font-medium text-gray-700 mb-1">
-              ODN Number
+              Numero d'ODN 
             </label>
             <input
               type="text"
@@ -393,13 +393,13 @@ function AddEnterpriseDialog({ isOpen, onClose, onAdd }) {
               onClick={onClose}
               className="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
             >
-              Cancel
+              Annuler
             </button>
             <button
               type="submit"
               className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
             >
-              Add Enterprise
+              Ajouter Enterprise
             </button>
           </div>
         </form>

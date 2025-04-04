@@ -42,7 +42,7 @@ function LoginForm() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br bg-white p-4">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br  p-4">
     <div className="w-full max-w-md overflow-hidden rounded-xl bg-white shadow-2xl transition-all duration-300 hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)]
     ">
       <div className="flex flex-col items-center bg-gradient-to-b from-gray-50 to-white px-8 pt-8 pb-6">
@@ -110,7 +110,7 @@ function LoginForm() {
 
           <button
             type="submit"
-            className="h-11 w-full rounded-md bg-[#1f8034] font-medium text-white shadow-md transition-all duration-200 hover:bg-[#c00510] focus:outline-none focus:ring-2 focus:ring-[#e30613] focus:ring-opacity-50 active:scale-[0.98]"
+            className="h-11 w-full rounded-md bg-green-600 font-medium text-white shadow-md transition-all duration-200 hover:bg-[#c00510] focus:outline-none focus:ring-2 focus:ring-[#e30613] focus:ring-opacity-50 active:scale-[0.98]"
             disabled={isLoading}
           >
             {isLoading ? (

@@ -26,7 +26,7 @@ function App() {
       <div 
         className="h-48 w-full bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?auto=format&fit=crop&q=80&w=2000&h=400')`
+          backgroundImage: `url('https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?auto=format&fit=crop&q=80&w=2000&h=400')`, borderTopLeftRadius:"6px", borderTopRightRadius:"6px",
         }}
       />
       
