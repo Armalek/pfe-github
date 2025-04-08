@@ -30,9 +30,9 @@ function App() {
    </div>
    <div className="flex-grow overflow-auto bg-gray-100 p-6">
      <Routes>
+     <Route path="/login" element={<Login />}></Route>
       <Route path="/" element={<Projets />}></Route>
       <Route path="/users" element={<Users />}></Route>
-      <Route path="/login" element={<Login />}></Route>
       <Route path="/projets" element={<Projets />}></Route>
       <Route path="/profile" element={<Profile />}></Route>
       <Route path="/dashboard" element={<Dashboardss />}></Route>
@@ -45,6 +45,7 @@ function App() {
    </div>
  
    </BrowserRouter>
+   
   );
 };
 
