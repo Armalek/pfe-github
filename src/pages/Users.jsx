@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useState } from "react"
 import { PlusCircle, Trash2, Eye, EyeOff, Search, Key } from "lucide-react"
@@ -110,7 +110,7 @@ export default function UserManagement() {
             onClick={toggleUserVisibility}
             aria-label={showUsers ? "Hide users" : "Show users"}
           >
-            {showUsers ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+            {showUsers ? <EyeOff className="h-4 w-4 " /> : <Eye className="h-4 w-4" />}
           </button>
 
           <button
@@ -272,17 +272,17 @@ export default function UserManagement() {
 
             <div className="p-6 border-t flex justify-end gap-2">
               <button
-                className="px-4 py-2 border rounded-md hover:bg-gray-50 transition-colors"
+                className="px-4 py-2 border rounded-md bg-red-700 hover:bg-red-600 text-white transition-colors"
                 onClick={() => setIsDialogOpen(false)}
               >
-                Cancel
+                Annuler
               </button>
               <button
-                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 onClick={handleAddUser}
                 disabled={!newUser.name || !newUser.email}
               >
-                Add User
+                Ajouter Utilisateur
               </button>
             </div>
           </div>

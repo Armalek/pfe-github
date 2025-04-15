@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Link as LinkIcon, Twitter, Github, Calendar, Phone, Edit2, Check, X } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
 function App() {
+  const { user } = useAuth();
   const [isEditing, setIsEditing] = useState(false);
   const [contactInfo, setContactInfo] = useState({
     address: 'Blida, Algeria',
